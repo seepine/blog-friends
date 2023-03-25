@@ -9,15 +9,15 @@ body:
       description: 请认真检查以下清单中的每一项，并在相符的项前打勾。
       options:
         - required: true
-          label: 合法的、非营利性、无商业广告、无木马植入。
+          label: 已将Seepine's Blog信息添加到友链页面。
         - required: false
-          label: 有实质性原创内容的 HTTPS 站点，发布过至少 5 篇原创文章，内容题材不限。
+          label: 合法的、无木马植入。
         - required: false
-          label: 有独立域名，非免费域名。
+          label: 有实质性原创内容的个人博客或组织。
         - required: false
-          label: 博客已运行至少半年，非刚搭建好。
+          label: 必须是 HTTPS 站点。
         - required: false
-          label: 与 xaoxuu 有至少 5 次有效互动（有内容的留言或者 issue 等）。
+          label: 关于广告，需合法，且不影响正常阅读。
   - type: textarea
     id: config-file
     validations:
@@ -39,8 +39,8 @@ body:
     id: friends-html
     attributes:
       label: 友链地址
-      description: 请输入您的友链页面地址。
-      placeholder: "如: https://xaoxuu.com/friends/"
+      description: 请输入您的友链页面地址，方便查询是否已添加我的友链。
+      placeholder: "如: https://seepine.com/friends/"
     validations:
       required: true
   - type: input
@@ -48,4 +48,4 @@ body:
     attributes:
       label: 友链仓库（可选）
       description: 如果您使用 issue 作为友链源，请附上 issue 仓库链接。
-      placeholder: "如: https://github.com/xaoxuu/friends/"
+      placeholder: "如: https://github.com/seepine/blog-friends/"
